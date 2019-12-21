@@ -1,4 +1,4 @@
-/**
+t/**
  * CMS Configuration
  * Alter 'netlify' in the import statment below to one of the following:
  * netlify
@@ -9,12 +9,12 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
+  siteName: 'Frent',
+  tagline: 'Машины в прокат',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
-    on: true,
+    on: false,
     id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
@@ -29,16 +29,6 @@ export default {
     {
       name: 'Categories',
       link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
     }
   ],
   hero: {
@@ -95,9 +85,9 @@ export default {
     on: true,
     theme: null, // See card.theme (can be unique for posts if set here)
     imageDimensions: null, // See card.imageDimensions (can be unique for posts if set here)
-    displayAuthor: true,
+    displayAuthor: false,
     date: {
-      display: true
+      display: false
     },
     perRow: 3,
     perPage: 6
